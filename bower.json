@@ -1,0 +1,20 @@
+{
+  "name": "polymer",
+  "homepage": "https://github.com/shireeshaps/polymer-admin",
+  "authors": [
+    "shireesha <shireesha@quintype.com>"
+  ],
+  "description": "polymer admin page",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.7.0"
+  }
+}

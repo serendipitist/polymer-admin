@@ -1,0 +1,32 @@
+<link rel="import" href="template-helper.html"/>
+<dom-module id="side-menu">
+  <template>
+  <paper-menu class="side-menu-left" class="list" multi selected-values="{{selected}}">
+        <paper-item>
+          <img src="https://dummyimage.com/200x200/000/fff" alt="photo">
+        </paper-item>
+          <paper-item >
+          <paper-icon-button class="fa fa-dashboard fa-lg"></paper-icon-button>
+          Dashboard</paper-item>
+          <paper-item on-tap="menuSelected" mypath="/"><paper-icon-button class="fa fa-reorder fa-lg"></paper-icon-button>
+          Typography</paper-item>
+          <paper-item  on-tap="menuSelected" mypath="/">
+          <paper-icon-button class="fa fa-reply fa-lg"></paper-icon-button>Grid</paper-item>
+          <paper-item  on-tap="menuSelected" mypath="/">
+          <paper-icon-button class="fa fa-reply fa-lg"></paper-icon-button>Tables</paper-item>
+          <paper-item  on-tap="menuSelected" mypath="/">
+          <paper-icon-button class="fa fa-reply fa-lg"></paper-icon-button>Forms</paper-item>
+      </paper-menu>
+
+  </template>
+</dom-module>
+
+<script>
+ Polymer({
+    is: 'side-menu',
+    menuSelected: function (e) {
+        var mypath = e.currentTarget.getAttribute('mypath');
+        document.querySelector('app-router').go(mypath);
+    },
+})();
+</script>

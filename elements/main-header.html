@@ -1,0 +1,17 @@
+<link rel="import" href="template-helper.html"/>
+<dom-module id="main-header">
+<template>
+      <paper-toolbar id="mainToolbar">
+        <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+        <div class="header-menu-right">
+          <paper-icon-button class="fa fa-envelope fa-lg"></paper-icon-button>
+          <paper-icon-button class="fa fa-bookmark fa-lg"></paper-icon-button>
+          <paper-icon-button class="fa fa-gear fa-lg"></paper-icon-button>
+          <paper-icon-button class="fa fa-search fa-lg"></paper-icon-button>
+        </div>
+      </paper-toolbar>
+</template>
+<script>
+    Polymer({is: "main-header"});
+  </script>
+</dom-module>

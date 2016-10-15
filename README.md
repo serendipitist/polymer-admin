@@ -1,2 +1,2 @@
-Polymer Admin
+#Polymer Admin using Polymer 1.0
 

@@ -1,2 +1,3 @@
-node_modulesi
-bower_componests
+.DS_Store
+/node_modules
+/bower_components

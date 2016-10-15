@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="import" href="elements/template-helper.html"/>
-  <link rel="import" href="elements/side-menu.html"/>
-  <link rel="import" href="elements/main-header.html"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-  <style>
-    @media (min-width:1056px) {
-      .header-menu-right{
-        margin-left:80%;
-      }
-    }
-    .paper-font-title{
-      margin-left:10px;
-    }
-  </style>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="import" href="elements/template-helper.html"/>
+	<link rel="import" href="elements/side-menu.html"/>
+	<link rel="import" href="elements/main-header.html"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link rel ="stylesheet" href="application.css"/>
 </head>
 <body class="fullbleed vertical layout">
-  <!-- Content starts here -->
-  <paper-drawer-panel id="paperDrawerPanel" >
-    <!-- Left drawer-->
-    <paper-header-panel drawer>
-      <paper-toolbar id="drawerToolbar">
-        <paper-icon-button icon="close" ></paper-icon-button>
-        <span class="paper-font-title">SHARPEN</span>
-      </paper-toolbar>
-      <side-menu></side-menu>
-    </paper-header-panel>
-    <paper-header-panel main>
-      <main-header></main-header>
-    </paper-header-panel>
-    <!-- Main Area for content -->
-   </paper-drawer-panel>
-  <!-- Content ends here -->
+	<!-- Content starts here -->
+			<paper-drawer-panel id="paperDrawerPanel" >
+				<!-- Left drawer-->
+					<paper-header-panel drawer>
+							<paper-toolbar id="drawerToolbar">
+								<paper-icon-button icon="close" ></paper-icon-button>
+								<span class="paper-font-title">SHARPEN</span>
+							</paper-toolbar>
+							<side-menu></side-menu>
+					</paper-header-panel>
+					<paper-header-panel main>
+						 <main-header></main-header>
+					</paper-header-panel>
+				<!-- Main Area for content -->
+		 </paper-drawer-panel>
+	<!-- Content ends here -->
 </body>
 </html>

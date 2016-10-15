@@ -3,11 +3,45 @@
 <head>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-  <script src ="bower_components/platform/platform.js"></script>
-  <link rel="import" href="elements/hello-world.html"/>
+
+  <link rel="import" href="elements/template-helper.html"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  <style>
+  .header-menu-right{
+    margin-left:30%;
+  }
+  </style>
   </head>
-  <body>
-  <register-me>
-  </register-me>
-  </body>
+<body class="fullbleed vertical layout">
+  <!-- Content starts here -->
+
+
+
+ <paper-drawer-panel id="paperDrawerPanel" >
+    <!-- Left drawer-->
+    <paper-header-panel drawer>
+      <paper-toolbar id="drawerToolbar">
+          <paper-icon-button icon="close" ></paper-icon-button>
+          <span class="paper-font-title">SHARPEN</span>
+      </paper-toolbar>
+    </paper-header-panel>
+
+    <!-- Main Area for content -->
+    <paper-header-panel main>
+      <paper-toolbar id="mainToolbar">
+        <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+        <div class="header-menu-right">
+        <paper-icon-button class="fa fa-envelope fa-lg"></paper-icon-button>
+        <paper-icon-button class="fa fa-bookmark fa-lg"></paper-icon-button>
+        <paper-icon-button class="fa fa-gear fa-lg"></paper-icon-button>
+        <paper-icon-button class="fa fa-search fa-lg"></paper-icon-button>
+      </div>
+      </paper-toolbar>
+
+    </paper-header-panel>
+  </paper-drawer-panel>
+
+
+<!-- Content ends here -->
+</body>
   </html>
